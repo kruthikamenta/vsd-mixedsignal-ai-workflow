@@ -38,8 +38,11 @@ Explain every parameter.
 
 ![Generated Config](../screenshots/experiment_04/codex_config_response.png)
 
-Generated File
-config.tcl
+## Generated Artifact
+
+The complete AI-generated OpenLane configuration file is available here:
+
+[config.tcl](../generated_files/config.tcl)
 
 ---
 
