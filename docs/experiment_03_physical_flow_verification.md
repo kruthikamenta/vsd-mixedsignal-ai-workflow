@@ -24,7 +24,7 @@ Observation:
 
 **Screenshot:**
 
-![Repository Results Tree](screenshots/experiment_03/results_tree.png)
+![Repository Results Tree](../screenshots/experiment_03/results_tree.png)
 
 ---
 
