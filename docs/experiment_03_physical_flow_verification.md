@@ -44,7 +44,7 @@ Observation:
 
 **Screenshot:**
 
-![Floorplan Output](../../screenshots/experiment_03/floorplan.png)
+![Floorplan Output](../screenshots/experiment_03/floorplan.png)
 
 ---
 
@@ -64,7 +64,7 @@ Observation:
 
 **Screenshot:**
 
-![Placement Output](../../screenshots/experiment_03/placement.png)
+![Placement Output](../screenshots/experiment_03/placement.png)
 
 ---
 
@@ -84,7 +84,7 @@ Observation:
 
 **Screenshot:**
 
-![Routing Output](../../screenshots/experiment_03/routing.png)
+![Routing Output](../screenshots/experiment_03/routing.png)
 
 ---
 
@@ -108,4 +108,4 @@ These files confirm successful generation of the final physical layout outputs.
 
 **Screenshot:**
 
-![Layout Output Files](../../screenshots/experiment_03/layout_files.png)
+![Layout Output Files](../screenshots/experiment_03/layout_files.png)
