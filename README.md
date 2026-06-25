@@ -1,38 +1,35 @@
-# vsd-mixedsignal-ai-workflow
-
-
-# AI-Assisted Mixed-Signal WorkFlow Documentation
+# AI-Assisted Mixed-Signal Workflow
 
 ## Overview
 
-This repository documents an AI-assisted study of the mixed-signal RTL-to-GDSII implementation flow demonstrated in the **vsdmixedsignalflow** reference repository.
+This repository documents an AI-assisted exploration of the **vsdmixedsignalflow** reference repository to understand a mixed-signal RTL-to-GDSII implementation flow using **OpenLane** and the **SKY130 Process Design Kit (PDK)**.
 
-The objective of this work was to understand how an analog hard macro can be integrated into a predominantly digital physical design flow using OpenLane and the SKY130 Process Design Kit (PDK). AI tools were used to assist in repository analysis, RTL understanding, LEF/LIB interpretation, OpenLane configuration generation, flow script generation, debugging support, and documentation.
+The project demonstrates how AI tools can assist in repository exploration, RTL analysis, analog macro understanding, OpenLane configuration generation, physical design flow analysis, and technical documentation while emphasizing the importance of manual engineering verification.
 
-All AI-generated outputs were manually verified against the reference repository before being accepted.
+All AI-generated artifacts were reviewed against the reference implementation before acceptance.
 
 ---
 
 ## Reference Repository
 
-Reference design studied during this task:
+Reference repository studied during this project:
 
-https://github.com/praharshapm/vsdmixedsignalflow
+**https://github.com/praharshapm/vsdmixedsignalflow**
 
-The repository demonstrates a mixed-signal physical design flow integrating an analog 2:1 multiplexer macro (AMUX2_3V) with digital SPI control logic using OpenLane and SKY130.
+The reference design demonstrates the integration of an **AMUX2_3V analog hard macro** with digital SPI control logic using the OpenLane RTL-to-GDSII flow.
 
 ---
 
-## Task Objective
+## Project Objectives
 
-The primary objectives of this task were:
+The objectives of this work were to:
 
-* Understand the structure of a mixed-signal RTL-to-GDSII flow.
-* Study analog macro integration using Verilog, LEF, and LIB views.
-* Analyze OpenLane configuration and execution scripts.
-* Use AI tools to generate and verify design files and flow configurations.
-* Compare AI-generated outputs against the reference implementation.
-* Document prompts, generated files, verification steps, observations, and results.
+* Understand the architecture of a mixed-signal RTL-to-GDSII implementation flow.
+* Study analog hard macro integration using Verilog, LEF, and LIB views.
+* Analyze OpenLane configuration files and automation scripts.
+* Generate supporting design artifacts using AI tools.
+* Validate AI-generated outputs against the reference implementation.
+* Document prompts, generated files, verification steps, observations, corrections, and conclusions.
 
 ---
 
@@ -42,117 +39,110 @@ The primary objectives of this task were:
 
 Used for:
 
-* Repository understanding
-* RTL analysis
-* LEF/LIB interpretation
-* OpenLane flow explanation
+* Repository exploration
+* RTL hierarchy analysis
+* LEF and LIB interpretation
+* Physical design flow explanation
 * Verification planning
-* Documentation support
+* Documentation preparation
 
 ### OpenAI Codex
 
 Used for:
 
-* Verilog black-box generation
+* Black-box Verilog generation
 * OpenLane configuration generation
-* LEF analysis
-* OpenLane script generation
-* Engineering documentation assistance
+* LEF engineering analysis
+* OpenLane script analysis
+* Engineering report generation
 
 ---
 
-## Experiments Performed
+## Experiments Conducted
 
-### Experiment 1 – Repository Structure Analysis
-
-Studied the repository hierarchy and identified RTL, LEF, LIB, layout, and OpenLane configuration files.
-
-### Experiment 2 – RTL Analysis
-
-Analyzed the top-level design hierarchy and analog macro integration within the design_mux module.
-
-### Experiment 3 – Physical Design Output Verification
-
-Examined generated synthesis, floorplan, placement, routing, and layout outputs available in the repository.
-
-### Experiment 4 – OpenLane Configuration Generation
-
-Generated an OpenLane configuration file using AI and compared it with the repository implementation.
-
-### Experiment 5 – LEF Macro Analysis
-
-Analyzed the AMUX2_3V LEF file to understand macro dimensions, pin definitions, placement information, routing access, and power connectivity.
-
-### Experiment 6 – OpenLane Flow Script Generation
-
-Generated an OpenLane execution script using AI and compared it with the repository script.tcl flow.
+| Experiment    | Description                            |
+| ------------- | -------------------------------------- |
+| Experiment 01 | Repository Structure Analysis          |
+| Experiment 02 | RTL Hierarchy and Macro Analysis       |
+| Experiment 03 | Physical Design Output Verification    |
+| Experiment 04 | AI-Generated OpenLane Configuration    |
+| Experiment 05 | AI-Assisted LEF Macro Analysis         |
+| Experiment 06 | OpenLane Script Analysis               |
+| Experiment 07 | AI-Generated Black-Box Verilog Wrapper |
+| Experiment 08 | OpenLane Configuration Validation      |
+| Experiment 09 | Error Identification and Fixes         |
+| Experiment 10 | AI Prompt Log                          |
 
 ---
 
 ## Generated Files
 
-The following files were generated using AI tools during the study:
+The following AI-generated artifacts are included in this repository:
 
 * AMUX2_3V Black-Box Verilog Wrapper
-* OpenLane Configuration File (config.tcl)
-* OpenLane Execution Script (script.tcl)
-* LEF Engineering Analysis Report
-* Repository Analysis Documentation
+* OpenLane Configuration File (`config.tcl`)
 
-All generated files were compared against the reference repository and manually verified.
+Each generated file was manually compared with the reference implementation to verify correctness.
 
 ---
 
 ## Repository Structure
 
 ```text
-docs/
-    experiment_01_repo_analysis.md
-    experiment_02_rtl_analysis.md
-    experiment_03_physical_flow_verification.md
-    experiment_04_config_generation.md
-    experiment_05_lef_analysis.md
-    experiment_06_script_generation.md
-    final_observations.md
-
-prompts/
-    prompt_01_repo_analysis.md
-    prompt_02_rtl_analysis.md
-    prompt_03_macro_analysis.md
-    prompt_04_config_generation.md
-    prompt_05_lef_analysis.md
-    prompt_06_flow_script.md
-
-generated_files/
-    codex_amux_blackbox.v
-    codex_config.tcl
-    codex_script.tcl
-
-screenshots/
-    repository_analysis/
-    rtl_analysis/
-    floorplan/
-    placement/
-    routing/
-    drc/
-    magic_layout/
-
-report/
-    final_report.pdf
+vsd-mixedsignal-ai-workflow/
+│
+├── README.md
+│
+├── docs/
+│   ├── experiment_01_repo_analysis.md
+│   ├── experiment_02_rtl_analysis.md
+│   ├── experiment_03_physical_flow_verification.md
+│   ├── experiment_04_openlane_config_generation.md
+│   ├── experiment_05_lef_analysis.md
+│   ├── experiment_06_openlane_script_analysis.md
+│   ├── experiment_07_blackbox_generation.md
+│   ├── experiment_08_config_validation.md
+│   ├── experiment_09_error_identification_and_fixes.md
+│   ├── experiment_10_prompt_log.md
+│   └── final_observations.md
+│
+├── generated_files/
+│   ├── AMUX2_3V_blackbox.v
+│   └── config.tcl
+│
+└── screenshots/
+    ├── experiment_03/
+    ├── experiment_04/
+    ├── experiment_05/
+    └── experiment_06/
 ```
 
 ---
 
-## Key Observations
+## Key Outcomes
 
-* LEF and LIB files enable physical and timing abstraction of analog macros.
-* OpenLane integrates analog hard macros through black-box Verilog and LEF representations.
-* AI tools can successfully generate OpenLane configuration and execution scripts when provided with sufficient design context.
-* AI-generated outputs require manual engineering verification before use.
-* Mixed-signal integration depends heavily on consistency across Verilog, LEF, LIB, and layout views.
+* Studied the complete mixed-signal RTL-to-GDSII implementation flow.
+* Understood analog hard macro integration using LEF, LIB, and Verilog abstractions.
+* Generated OpenLane configuration and black-box Verilog files using AI assistance.
+* Verified physical design outputs available in the reference repository.
+* Compared AI-generated artifacts with the original implementation.
+* Identified configuration differences and documented required corrections.
+* Maintained a complete prompt log and engineering documentation for reproducibility.
+
+---
+
+## Key Learnings
+
+* AI can significantly accelerate the understanding of complex VLSI repositories.
+* OpenLane supports mixed-signal integration through LEF-based hard macro abstraction.
+* Consistency between Verilog, LEF, LIB, and physical layout is essential.
+* AI-generated design artifacts should always undergo manual engineering verification.
+* Systematic documentation improves reproducibility and traceability of AI-assisted engineering workflows.
 
 ---
 
 ## Conclusion
 
-This study demonstrated how AI tools can assist engineers in understanding, documenting, generating, and verifying components of a mixed-signal RTL-to-GDSII flow. The combination of AI-assisted analysis and manual validation significantly reduced the effort required to understand the OpenLane-based mixed-signal design flow while maintaining engineering accuracy.
+This repository demonstrates an AI-assisted methodology for studying and documenting a mixed-signal RTL-to-GDSII implementation flow. By combining AI-generated artifacts with manual validation and structured documentation, the project provides a reproducible workflow for understanding mixed-signal physical design using OpenLane and the SKY130 PDK.
+
+The study highlights both the strengths of AI in accelerating engineering tasks and the continued importance of human verification for ensuring technical correctness.
