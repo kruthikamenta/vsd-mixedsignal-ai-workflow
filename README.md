@@ -168,4 +168,18 @@ This repository demonstrates an AI-assisted methodology for studying and documen
 
 The project highlights how AI can improve engineering productivity while reinforcing the importance of manual verification to ensure technical correctness.
 
+---
+
+## Demonstration Video
+
+📹 [Watch the Demo Video](https://drive.google.com/drive/folders/1Skew8mKz2fA33zPKDb-jsqJ7xUBlQZac?usp=sharing)
+
+The video demonstrates the complete AI-assisted mixed-signal circuit design workflow including:
+- Project theory, reference repository, circuit block selected and design goal
+- Live AI workflow using ChatGPT to generate `config.tcl`, `AMUX2_3V_blackbox.v`
+- Terminal commands executed in GitHub Codespace
+- Errors faced
+- Final results and observations
+
+All prompts, generated files, commands, screenshots and final observations are documented in the [docs/](docs/) folder and [generated_files/](generated_files/) folder above.
 
